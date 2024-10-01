@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Raffle Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #f7f7f7;
+            border-radius: 15px;
+            padding: 30px;
+            width: 500px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .api-input {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .api-input input {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .api-input button {
+            width: 25%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .log {
+            margin-top: 20px;
+        }
+        .log-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .log-item.success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+        }
+        .log-item.failed {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="api-input">
+            <input type="text" id="apiKey" placeholder="API KEY">
+            <button onclick="startRegistration()">GO</button>
+        </div>
+        <div class="log" id="log"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
